@@ -870,9 +870,9 @@ class VCard:
 
             
     def _field_CATEGORIES(self, field, value, result):
-        # comma seperated just for fun
-        values = self.splitandunquote(value, seperator=",")
-        values = [v.replace(";", "").strip() for v in values]  # semi colon is used as seperator in bitpim text field
+        # comma separated just for fun
+        values = self.splitandunquote(value, separator=",")
+        values = [v.replace(";", "").strip() for v in values]  # semi colon is used as separator in bitpim text field
         values = [v for v in values if len(v)]
         v = result.get('categories', None)
         
@@ -884,9 +884,9 @@ class VCard:
 
             
     def _field_SOUND(self, field, value, result):
-        # comma seperated just for fun
-        values = self.splitandunquote(value, seperator=",")
-        values = [v.replace(";", "").strip() for v in values]  # semi colon is used as seperator in bitpim text field
+        # comma separated just for fun
+        values = self.splitandunquote(value, separator=",")
+        values = [v.replace(";", "").strip() for v in values]  # semi colon is used as separator in bitpim text field
         values = [v for v in values if len(v)]
         result[self._getfieldname("ringtones", result)] = ";".join(values)
         
@@ -1004,19 +1004,19 @@ class VCard:
                .replace("\r", "\n")
 
                
-    def splitandunquote(self, value, seperator=";"):
+    def splitandunquote(self, value, separator=";"):
         # also need a splitandsplitandunquote since some ; delimited fields are then comma delimited
 
-        # short cut for normal case - no quoted seperators
-        if value.find("\\"+seperator)<0:
-            return [self.unquote(v) for v in value.split(seperator)]
+        # short cut for normal case - no quoted separators
+        if value.find("\\"+separator)<0:
+            return [self.unquote(v) for v in value.split(separator)]
 
         # funky quoting, do it the slow hard way
         res = []
         build = ""
         v = 0
         while v < len(value):
-            if value[v] == seperator:
+            if value[v] == separator:
                 res.append(build)
                 build = ""
                 v += 1
