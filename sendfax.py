@@ -334,7 +334,7 @@ else: # NON_INTERACTIVE_MODE
         #     log.exception()
         #     sys.exit(1)
         # if stat.strip('\n') == 'Enforcing' :
-        #     log.error('Unable to add file. Please disable SeLinux.\nEither disable it manually or run hp-doctor from terminal.')
+        #     log.error('Unable to add file. Please disable SELinux.\nEither disable it manually or run hp-doctor from terminal.')
         #     sys.exit(0)
 
         for f in mod.args:
@@ -366,7 +366,7 @@ else: # NON_INTERACTIVE_MODE
                     sys.exit(1)
 
             if not mod.args:
-                mod.usage(error_msg=["No files specfied to send. Please specify the file(s) to send on the command line."])
+                mod.usage(error_msg=["No files specified to send. Please specify the file(s) to send on the command line."])
 
             file_list = []
 

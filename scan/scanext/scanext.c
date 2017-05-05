@@ -444,7 +444,7 @@ static PyObject *setOption (_ScanDevice * self, PyObject * args)
 
         case (SANE_TYPE_STRING):
             if (!PyUNICODE_CHECK (value))
-                return raiseError("SANE_String requires a a string.");
+                return raiseError("SANE_String requires a string.");
 
             SANE_String s = malloc (d->size + 1);
             strncpy (s, PyUNICODE_AsBYTES (value), d->size - 1);
@@ -803,7 +803,7 @@ MOD_INIT(scanext)  {
     insint (d, "INFO_RELOAD_PARAMS", SANE_INFO_RELOAD_PARAMS);
 
     // SANE status codes
-    insint (d, "SANE_STATUS_GOOD",  SANE_STATUS_GOOD); //Operation completed succesfully.
+    insint (d, "SANE_STATUS_GOOD",  SANE_STATUS_GOOD); //Operation completed successfully.
     insint (d, "SANE_STATUS_UNSUPPORTED", SANE_STATUS_UNSUPPORTED); // Operation is not supported.
     insint (d, "SANE_STATUS_CANCELLED", SANE_STATUS_CANCELLED); //Operation was cancelled.
     insint (d, "SANE_STATUS_DEVICE_BUSY", SANE_STATUS_DEVICE_BUSY); // Device is busy---retry later.

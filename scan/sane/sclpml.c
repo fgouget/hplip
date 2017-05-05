@@ -246,7 +246,7 @@ static SANE_Status hpaioResetScanner( hpaioScanner_t hpaio )
         {
             return retcode;
         }
-        sleep(1);       /* delay for embeded jetdirect scl scanners (ie: PS 3300, PS C7280, PS C6100) */
+        sleep(1);       /* delay for embedded jetdirect scl scanners (ie: PS 3300, PS C7280, PS C6100) */
     }
     else /* if (hpaio->scannerType==SCANNER_TYPE_PML) */
     {

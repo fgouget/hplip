@@ -476,7 +476,7 @@ STATUS_TO_ERROR_STATE_MAP = {
 
 
     # The following block are EVENTs because they are only
-    # recieved as events from hpmud, hp backend, etc.
+    # received as events from hpmud, hp backend, etc.
     # i.e., a device does not produce status codes in this range
     EVENT_ERROR_SUCCESS : ERROR_STATE_CLEAR,
     EVENT_ERROR_UNKNOWN_ERROR : ERROR_STATE_ERROR,

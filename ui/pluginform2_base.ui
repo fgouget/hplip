@@ -121,7 +121,7 @@
                         <cstring>radioButton5</cstring>
                     </property>
                     <property name="text">
-                        <string>Use an exisiting copy of the plug-in file (advanced):</string>
+                        <string>Use an existing copy of the plug-in file (advanced):</string>
                     </property>
                     <property name="buttonGroupId">
                         <number>1</number>

@@ -1985,7 +1985,7 @@ class CoreInstall(object):
                     "\nSome HPLIP applications are running. Press 'y' to close and proceed or Press 'n' to quit uninstall (y=yes*, n=no):", ['y', 'n'], 'y')
                 if not ok or choice == 'n':
                     log.info(
-                        "Quiting HPLIP unininstallation. Close application(s) manually and run again.")
+                        "Quiting HPLIP uninstallation. Close application(s) manually and run again.")
                     return False
 
             # Kill any running hpssd.py instance from a previous install
@@ -2348,7 +2348,7 @@ class CoreInstall(object):
                     if 'cups' in d:
                         if not services.start_service('cups', self.passwordObj):
                             log.error(
-                                "Failed to start CUPS sevice. Please start CUPS manually or restart system.")
+                                "Failed to start CUPS service. Please start CUPS manually or restart system.")
                     for cmd in missing_cmd:
                         sts, out = utils.run(cmd, self.passwordObj)
                         if sts != 0 or "Failed" in out:

@@ -149,7 +149,7 @@ for o, a in opts:
 
 
 if fit_to_page == pml.COPIER_FIT_TO_PAGE_ENABLED and reduction_spec:
-    log.warning("Fit to page specfied: Reduction/enlargement parameter ignored.")
+    log.warning("Fit to page specified: Reduction/enlargement parameter ignored.")
 
 
 if mode == GUI_MODE:

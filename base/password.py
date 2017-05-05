@@ -73,7 +73,7 @@ def showPasswordPrompt(prompt):
     return (username, password)
 
 
-# TBD this function shoud be removed once distro class implemented
+# TBD this function should be removed once distro class implemented
 def get_distro_name():
     os_name = None
     try:

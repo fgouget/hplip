@@ -854,7 +854,7 @@ class VCard:
             result[self._getfieldname(type, result)] = value
             return
             
-        # we need to insert our value at the begining
+        # we need to insert our value at the beginning
         values = [value]
         
         for suffix in [""]+list(range(2,99)):
@@ -1056,7 +1056,7 @@ class VCard:
         
 # The formatters return a string
 def myqpencodestring(value):
-    """My own routine to do qouted printable since the builtin one doesn't encode CR or NL!"""
+    """My own routine to do quoted printable since the builtin one doesn't encode CR or NL!"""
     return quopri.encodestring(value).replace("\r", "=0D").replace("\n", "=0A")
 
     

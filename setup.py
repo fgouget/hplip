@@ -350,7 +350,7 @@ else: # INTERACTIVE_MODE
                 clean_exit(1)
 
         if not auto:
-            log.info("(Note: Defaults for each question are maked with a '*'. Press <enter> to accept the default.)")
+            log.info("(Note: Defaults for each question are marked with a '*'. Press <enter> to accept the default.)")
             log.info("")
 
         # ******************************* MAKEURI
@@ -420,7 +420,7 @@ else: # INTERACTIVE_MODE
 
                     if os_utils.execute(cmd) != 0:
                         log.error("Failed to install Plugin.")
-                        log.error("The device you are trying to setup requires a binary plug-in. Some functionalities may not work as expected without plug-ins. Please run 'hp-plugin' as normal user to install plug-ins.Visit http://hplipopensource.com for more infomation.")
+                        log.error("The device you are trying to setup requires a binary plug-in. Some functionalities may not work as expected without plug-ins. Please run 'hp-plugin' as normal user to install plug-ins. Visit http://hplipopensource.com for more information.")
                         clean_exit(1)
 
         ppds = cups.getSystemPPDs()
@@ -593,7 +593,7 @@ else: # INTERACTIVE_MODE
                     break
 
                 while True:
-                    info = input(log.bold("Enter additonal information or notes for this printer (q=quit) ?"))
+                    info = input(log.bold("Enter additional information or notes for this printer (q=quit) ?"))
 
                     if info.strip().lower() == 'q':
                         log.info("OK, done.")
@@ -742,7 +742,7 @@ else: # INTERACTIVE_MODE
                     break
 
                 while True:
-                    info = input(log.bold("Enter additonal information or notes for this printer (q=quit) ?"))
+                    info = input(log.bold("Enter additional information or notes for this printer (q=quit) ?"))
 
                     if info.strip().lower() == 'q':
                         log.info("OK, done.")

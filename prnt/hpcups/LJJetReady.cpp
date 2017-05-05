@@ -139,7 +139,7 @@ DRIVER_ERROR LJJetReady::StartPage(JobAttributes *pJA)
     {
         iWidth = 1600;
     }
-//  The source width must be a mutiple of 32
+//  The source width must be a multiple of 32
     iWidth = ((iWidth + 31) / 32) * 32;
     iHeight = ((iHeight + (MOJAVE_STRIP_HEIGHT - 1)) / MOJAVE_STRIP_HEIGHT) * MOJAVE_STRIP_HEIGHT;
     szPrintableAreaSeq[1] = (BYTE) (iWidth & 0xFF);

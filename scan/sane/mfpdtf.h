@@ -321,7 +321,7 @@ typedef struct
    uint32_t CMYRows;
 } __attribute__((packed)) MFPDTF_END_PAGE;
 
-/* Folloing macros are now in gcc 4.3.2 endian.h */
+/* Following macros are now in gcc 4.3.2 endian.h */
 #if !defined(htole16) 
 #if defined(WORDS_BIGENDIAN)
 #define htole16(A) ((((uint16_t)(A) & 0xff00) >> 8) | (((uint16_t)(A) & 0x00ff) << 8))    /* host to little-endian 16-bit value */

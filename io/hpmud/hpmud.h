@@ -55,7 +55,7 @@ enum HPMUD_IO_MODE
    HPMUD_RAW_MODE=1,   /* bi-di */
    HPMUD_DOT4_MODE=3,
    HPMUD_DOT4_PHOENIX_MODE=4,  /* (ie: clj2550, clj2840, lj3050, lj3055, clj4730mfp) */
-   HPMUD_DOT4_BRIDGE_MODE=5,  /* (ie: clj2500) not USB compatable, use HPMUD_RAW_MODE, tested on F10 12/10/08 DES */
+   HPMUD_DOT4_BRIDGE_MODE=5,  /* (ie: clj2500) not USB compatible, use HPMUD_RAW_MODE, tested on F10 12/10/08 DES */
    HPMUD_MLC_GUSHER_MODE=6,   /* most new devices */
    HPMUD_MLC_MISER_MODE=7,  /* old stuff */
 };
@@ -235,7 +235,7 @@ enum HPMUD_RESULT hpmud_get_device_status(HPMUD_DEVICE dd, unsigned int *status)
  * hpmud_probe_devices - probe local buses for HP supported devices, call normally does not block
  *
  * inputs:
- *  bus - see enum definiton
+ *  bus - see enum definition
  *  buf_size - size of read buffer
  *
  * outputs:
@@ -250,7 +250,7 @@ enum HPMUD_RESULT hpmud_probe_devices(enum HPMUD_BUS_ID bus, char *buf, int buf_
  * hpmud_probe_printers - probe local buses for HP supported printers, call normally does not block
  *
  * inputs:
- *  bus - see enum definiton
+ *  bus - see enum definition
  *  buf_size - size of read buffer
  *
  * outputs:

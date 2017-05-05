@@ -95,7 +95,7 @@ class Console(cmd.Cmd):
     # Override methods in Cmd object
     def preloop(self):
         """Initialization before prompting user for commands.
-           Despite the claims in the Cmd documentaion, Cmd.preloop() is not a stub.
+           Despite the claims in the Cmd documentation, Cmd.preloop() is not a stub.
         """
         cmd.Cmd.preloop(self)   # sets up command completion
         self._hist    = []      # No history yet
@@ -104,7 +104,7 @@ class Console(cmd.Cmd):
 
     def postloop(self):
         """Take care of any unfinished business.
-           Despite the claims in the Cmd documentaion, Cmd.postloop() is not a stub.
+           Despite the claims in the Cmd documentation, Cmd.postloop() is not a stub.
         """
         cmd.Cmd.postloop(self)   # Clean up command completion
         print("Exiting...")
@@ -206,7 +206,7 @@ class Console(cmd.Cmd):
         else:
             total, delta = self.pc.cp_multiple(matched_files, remove_after_copy, self.cp_status_callback, self.rm_status_callback)
 
-            print(log.bold("\n%s transfered in %d sec (%d KB/sec)" % (utils.format_bytes(total), delta, (total/1024)/(delta))))
+            print(log.bold("\n%s transferred in %d sec (%d KB/sec)" % (utils.format_bytes(total), delta, (total/1024)/(delta))))
 
     def do_unload(self, args):
         """Unload all image files from photocard to current local directory.

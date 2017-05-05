@@ -1980,7 +1980,7 @@ def Is_HPLIP_older_version(installed_version, available_version):
                 Is_older = True
                 break
             elif (installed_ver_dig > available_ver_dig):
-                log.debug("Already new verison is installed")
+                log.debug("Already new version is installed")
                 return False
             #checking sub minor versions .. e.g "3.12.10a" vs "3.12.10".... "3.12.10a" --> latest
             else:
@@ -1988,7 +1988,7 @@ def Is_HPLIP_older_version(installed_version, available_version):
                     Is_older = True
                     break
                 elif (installed_ver_alph.lower() > available_ver_alph.lower()):
-                    log.debug("Already new verison is installed")
+                    log.debug("Already new version is installed")
                     return False
 
             cnt += 1

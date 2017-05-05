@@ -40,7 +40,7 @@ class StringTable:
             '103' : (self.__tr('Unable to connect to network. Please check your network connection and try again'), ''),
             '104' : (self.__tr('<STR1> file does not match its checksum. File may have been corrupted or altered'), ''),
             '105' : (self.__tr('GPG command not found'), ''),
-            '106' : (self.__tr('Unable to recieve key from keyserver'), ''),
+            '106' : (self.__tr('Unable to receive key from keyserver'), ''),
             '107' : (self.__tr('Failed to download <STR1>'), ''),
             '108' : (self.__tr('Digital signature verification failed for the file <STR1>. File may have been corrupted or altered'), ''),
             '109' : (self.__tr('Incorrect password'), ''),

@@ -227,7 +227,7 @@ def reconfigure_Queue(que, mode, dialog= None,app=None):
             else:
                 Error_msg = "PPD file for '%s' is not correct. Need to choose correct PPD file." %(que.PrinterName)
         else:
-            Error_msg ="'%s' is not configured using HPLIP. Need to remove and re-cofigure using hp-setup." %(que.PrinterName)
+            Error_msg ="'%s' is not configured using HPLIP. Need to remove and re-configure using hp-setup." %(que.PrinterName)
 
 
         if Error_msg != None:
@@ -267,7 +267,7 @@ def reconfigure_Queue(que, mode, dialog= None,app=None):
                 log.error("PPD file for '%s' is not correct. Need to choose correct PPD file." %(que.PrinterName))
                 Error_msg = QUEUES_INCORRECT_PPD
         else:
-            log.error("'%s' is not configured using HPLIP. Need to remove and re-cofigure using hp-setup." %(que.PrinterName))
+            log.error("'%s' is not configured using HPLIP. Need to remove and re-configure using hp-setup." %(que.PrinterName))
             Error_msg =QUEUES_CONFIG_ERROR
 
         if Error_msg == None and que.IsEnabled == False:

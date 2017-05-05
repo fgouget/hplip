@@ -7,7 +7,7 @@ See http://python-ldap.sourceforge.net for details.
 
 $Id: ldif.py,v 1.3 2008/02/11 16:35:43 dwelch Exp $
 
-Python compability note:
+Python compatibility note:
 Tested with Python 2.0+, but should work with Python 1.5.2+.
 
 The python-ldap package is distributed under Python-style license.
@@ -234,7 +234,7 @@ class LDIFWriter:
 def CreateLDIF(dn, record, base64_attrs=None, cols=76):
     """
     Create LDIF single formatted record including trailing empty line.
-    This is a compability function. Use is deprecated!
+    This is a compatibility function. Use is deprecated!
 
     dn
           string-representation of distinguished name
@@ -493,7 +493,7 @@ class LDIFCopy(LDIFParser):
 def ParseLDIF(f, ignore_attrs=None, maxentries=0):
     """
     Parse LDIF records read from file.
-    This is a compability function. Use is deprecated!
+    This is a compatibility function. Use is deprecated!
     """
     ldif_parser = LDIFRecordList(f, ignored_attr_types=ignore_attrs,
         max_entries=maxentries, process_url_schemes=0)

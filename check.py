@@ -81,7 +81,7 @@ def usage(typ='text'):
     sys.exit(0)
 
 
-# Displays the the hp-check usage information.
+# Displays the hp-check usage information.
 def show_title():
         utils.log_title(__title__, __version__)
 
@@ -117,7 +117,7 @@ def show_title():
         log.info("    INCOMPAT      - Incompatible dependency-version or Plugin-version")
         log.info()
 
-# Status_Type function. --> Returns the package installed status indformation
+# Status_Type function. --> Returns the package installed status information
 def Status_Type(Installedsts, min_ver,Installed_ver):
     if Installedsts is True or Installedsts !=  0:
         if min_ver == '-' or check_version(Installed_ver,min_ver):
@@ -367,7 +367,7 @@ class DependenciesCheck(object):
 
             self.core.dependencies.update(self.core.hplip_dependencies)
             if time_flag == DEPENDENCY_RUN_AND_COMPILE_TIME or time_flag == DEPENDENCY_RUN_TIME:
-                dep_dict = { "External Dependencies": EXTERNALDEP, "General Dependencies": GENERALDEP, "COMPILEDEP": COMPILEDEP, "Python Extentions": PYEXT, "Scan Configuration": SCANCONF }
+                dep_dict = { "External Dependencies": EXTERNALDEP, "General Dependencies": GENERALDEP, "COMPILEDEP": COMPILEDEP, "Python Extensions": PYEXT, "Scan Configuration": SCANCONF }
                 for dep_check in dep_dict:
                     tui.header(dep_check)
                     for dep in self.core.dependencies:
@@ -390,7 +390,7 @@ class DependenciesCheck(object):
                 #     if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] == COMPILEDEP:
                 #         self.__update_deps_info(supported_distro_vrs, dep, self.dependencies[dep])
 
-                # tui.header(" Python Extentions")
+                # tui.header(" Python Extensions")
                 # for dep in self.dependencies:
                 #     if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] == PYEXT:
                 #         self.__update_deps_info(supported_distro_vrs, dep, self.dependencies[dep])

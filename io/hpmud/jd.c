@@ -136,7 +136,7 @@ bugout:
    return stat;
 }
 
-/* Remove channel object given the channel decriptor. */
+/* Remove channel object given the channel descriptor. */
 static int del_channel(mud_device *pd, mud_channel *pc)
 {
    pc->client_cnt--;

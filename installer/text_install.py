@@ -82,7 +82,7 @@ def start(language, auto=True, test_depends=False,
 
         log.info("")
         log.note(
-            "Defaults for each question are maked with a '*'. Press <enter> to accept the default.")
+            "Defaults for each question are marked with a '*'. Press <enter> to accept the default.")
         core.init()
         vrs = core.get_distro_data('versions_list')
         Is_Manual_Distro = False
@@ -93,7 +93,7 @@ def start(language, auto=True, test_depends=False,
                 log.error("%s-%s version is not supported, so all dependencies may not be installed. However trying to install using %s-%s version packages."
                           % (core.distro_name, core.distro_version, core.distro_name, distro_alternate_version))
                 ok, choice = tui.enter_choice(
-                    "\nPress 'y' to continue auto installation. Press 'n' to quit auto instalation(y=yes, n=no*): ", ['y', 'n'], 'n')
+                    "\nPress 'y' to continue auto installation. Press 'n' to quit auto installation(y=yes, n=no*): ", ['y', 'n'], 'n')
                 if not ok or choice == 'n':
                     log.info("Installation exit")
                     sys.exit()
@@ -107,7 +107,7 @@ def start(language, auto=True, test_depends=False,
         if Is_Manual_Distro:
             log.error("Auto installation is not supported for '%s' distro so all dependencies may not be installed. \nPlease install manually as mentioned in 'http://hplipopensource.com/hplip-web/install/manual/index.html' web-site" % core.distro_name)
             ok, choice = tui.enter_choice(
-                "\nPress 'y' to continue auto installation. Press 'n' to quit auto instalation(y=yes, n=no*): ", ['y', 'n'], 'n')
+                "\nPress 'y' to continue auto installation. Press 'n' to quit auto installation(y=yes, n=no*): ", ['y', 'n'], 'n')
             if not ok or choice == 'n':
                 log.info("Installation exit")
                 sys.exit()
@@ -801,7 +801,7 @@ def start(language, auto=True, test_depends=False,
 
             if not ans and num_req_missing:
                 log.error(
-                    "Installation can not continue because all REQUIRED dependencies are not installed.")
+                    "Installation cannot continue because all REQUIRED dependencies are not installed.")
                 sys.exit(0)
 
         if num_req_missing:

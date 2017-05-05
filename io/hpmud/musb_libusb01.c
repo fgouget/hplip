@@ -77,7 +77,7 @@ static mud_channel_vf musb_dot4_channel_vf =
 };
 
 /*
- * The folloing fd arrays must match "enum FD_ID" definition.
+ * The following fd arrays must match "enum FD_ID" definition.
  */
 
 static char *fd_name[MAX_FD] =
@@ -418,7 +418,7 @@ bugout:
     return stat;
 }
 
-/* Detach any kernel module that may have claimed specified inteface. */
+/* Detach any kernel module that may have claimed specified interface. */
 static int detach(usb_dev_handle *hd, int interface)
 {
     char driver[32];
@@ -965,7 +965,7 @@ bugout:
     return stat;
 }
 
-/* Remove channel object given the channel decriptor. */
+/* Remove channel object given the channel descriptor. */
 static int del_channel(mud_device *pd, mud_channel *pc)
 {
     pc->client_cnt--;

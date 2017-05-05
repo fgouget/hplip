@@ -525,7 +525,7 @@ def readXmlTagDataFromURI(dev,URI,xmlRootNode,xmlReqDataNode,timeout=5):
             strResp = utils.unchunck_xml_data(strResp)
             pos = strResp.find(xmlRootNode,0,len(strResp))    
             repstr = strResp[pos:].strip()
-            repstr = repstr.replace('\r',' ').replace('\t',' ').replace('\n',' ') # To remove formating characters from the received xml
+            repstr = repstr.replace('\r',' ').replace('\t',' ').replace('\n',' ') # To remove formatting characters from the received xml
             repstr = repstr.rstrip('0')   # To remove trailing zero from the received xml
             try:
                 parser_object = utils.extendedExpat()
@@ -534,13 +534,13 @@ def readXmlTagDataFromURI(dev,URI,xmlRootNode,xmlReqDataNode,timeout=5):
                 reqDataElementList = root_element.getElementsByTagName(xmlReqDataNode)
                 for node in reqDataElementList:
                     repstr = node.toString()
-                    repstr = repstr.replace('\r',' ').replace('\t',' ').replace('\n',' ') # To remove formating characters from the received xml
+                    repstr = repstr.replace('\r',' ').replace('\t',' ').replace('\n',' ') # To remove formatting characters from the received xml
                     params = utils.XMLToDictParser().parseXML(to_bytes_utf8(repstr))
                     paramsList.append(params)
             except xml.parsers.expat.ExpatError as e:
                 log.debug("XML parser failed: %s" % e)  #changed from error to debug 
         else:
-            log.debug("HTTP Responce failed with %s code"%code)
+            log.debug("HTTP Response failed with %s code"%code)
     return paramsList,code
 
 
@@ -586,7 +586,7 @@ def readXmlDataFromURI(dev,URI,xmlRootNode,xmlChildNode,timeout=5):
             strResp = utils.extract_xml_chunk(strResp)
             pos = strResp.find(xmlRootNode,0,len(strResp))    
             repstr = strResp[pos:].strip()
-            repstr = repstr.replace('\r',' ').replace('\t',' ').replace('\n',' ') # To remove formating characters from the received xml
+            repstr = repstr.replace('\r',' ').replace('\t',' ').replace('\n',' ') # To remove formatting characters from the received xml
             repstr = repstr.rstrip('0')   # To remove trailing zero from the received xml
             elementCount = repstr.count(xmlChildNode)
             try:
@@ -594,7 +594,7 @@ def readXmlDataFromURI(dev,URI,xmlRootNode,xmlChildNode,timeout=5):
             except xml.parsers.expat.ExpatError as e:
                 log.debug("XML parser failed: %s" % e)  #changed from error to debug 
         else:
-            log.debug(" HTTP Responce failed with %s code"%code)
+            log.debug(" HTTP Response failed with %s code"%code)
 
     return params,code,elementCount
 

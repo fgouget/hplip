@@ -4993,7 +4993,7 @@ sub rip_die {
     if ($kidgeneration == 0) { # We are the main process
 
 	if ($spooler eq 'ppr_int') {
-	    # Special error handling for PPR intefaces
+	    # Special error handling for PPR interfaces
 	    $message =~ s/\\/\\\\/;
 	    $message =~ s/\"/\\\"/;
 	    my @messagelines = split("\n", $message);

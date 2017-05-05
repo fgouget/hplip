@@ -1864,7 +1864,7 @@ class PrintSettingsToolbox(QToolBox):
             #else:
             #    self.removePrinterOption('HOLDKEY')
 
-            # Dup/exisiting
+            # Dup/existing
             if self.job_storage_job_exist == JOB_STORAGE_EXISTING_JOB_REPLACE:
                 log.debug("Job storage duplicate = JOB_STORAGE_EXISTING_JOB_REPLACE")
                 self.setPrinterOption('DUPLICATEJOB', 'REPLACE')

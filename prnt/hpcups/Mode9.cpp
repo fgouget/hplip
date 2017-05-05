@@ -248,7 +248,7 @@ bool Mode9::Process(RASTERDATA* input)
             sptr--;
 
             /* Adjust the count if the last_byte == current_byte.
-               Save these bytes for the upcomming run of mode 1. */
+               Save these bytes for the upcoming run of mode 1. */
             if ((byte_count < size) && (last_byte == (char)*nptr))
             {
                 nptr--;  /* Now sptr points to first byte in the new run of mode 1. */

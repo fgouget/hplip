@@ -106,7 +106,7 @@ def install_firmware(pluginObj,Plugin_Installation_Completed, USB_param):
             if pluginObj.getStatus() == PLUGIN_INSTALLED:
                 break
             else:
-                log.error("Failed to download firmware required files. manually run hp-plugin command in terminal fisrt")
+                log.error("Failed to download firmware required files. Manually run the hp-plugin command in terminal first")
                 sys.exit(1)
 
     execmd="hp-firmware"

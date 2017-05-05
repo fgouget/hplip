@@ -263,7 +263,7 @@ def disable(mode, ui_toolkit='qt4', dialog=None, app=None, passwordObj = None):
                     response, value = tui.enter_yes_no("Digital Sign verification failed, Do you want to continue?")
                     if not response or not value:
                         sys.exit(0)
-                    else:   # Continue without validation succes.
+                    else:   # Continue without validation success.
                         disable_si = True
                 else:
                     return_error_str = queryString(sts)

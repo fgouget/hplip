@@ -62,7 +62,7 @@
  * doc/doxygen-sanei.conf configuration file and dcoumentation in the sanei_*.h
  * files.
  *
- * This documenation is far from complete. Any help is appreciated.
+ * This documentation is far from complete. Any help is appreciated.
  *
  * @section additional Additional documentation
  * - The SANE standard can be found at <a 

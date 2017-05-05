@@ -101,7 +101,7 @@ class PluginForm2_base(QDialog):
         self.actionPushButton.setText(self.__tr("Download and Install"))
         self.textLabel1.setText(self.__tr("You may download the plug-in directly from an HP authorized server, or, if you already have a copy of the file, you can specify a path to the file."))
         self.sourceGroup.setTitle(self.__tr("Plug-in Source"))
-        self.radioButton5.setText(self.__tr("Use an exisiting copy of the plug-in file (advanced):"))
+        self.radioButton5.setText(self.__tr("Use an existing copy of the plug-in file (advanced):"))
         self.browsePushButton.setText(self.__tr("Browse..."))
         self.radioButton4.setText(self.__tr("Download the plug-in from an HP authorized server (recommended)"))
 

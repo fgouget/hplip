@@ -278,7 +278,7 @@ if mode == GUI_MODE:
 else: # INTERACTIVE_MODE
     try:
         
-        log.info("(Note: Defaults for each question are maked with a '*'. Press <enter> to accept the default.)")
+        log.info("(Note: Defaults for each question are marked with a '*'. Press <enter> to accept the default.)")
         log.info("")
         
         tui.header("PLUG-IN INSTALLATION FOR HPLIP %s" % version)

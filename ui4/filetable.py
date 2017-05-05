@@ -273,7 +273,7 @@ class FileTable(QWidget):
             except :
                 log.exception()
             # if stat.strip('\n') == 'Enforcing' :
-            #     FailureUI(self, self.__tr("<b>Unable to add file. Please disable SeLinux.</b><p>Either disable it manually or run hp-doctor from terminal.</p>"),
+            #     FailureUI(self, self.__tr("<b>Unable to add file. Please disable SELinux.</b><p>Either disable it manually or run hp-doctor from terminal.</p>"),
             #         self.__tr("HP Device Manager"))
             #     return
 
