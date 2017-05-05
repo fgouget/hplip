@@ -45,7 +45,7 @@ if fax_enabled:
         from fax import fax
     except ImportError:
         # This can fail on Python < 2.3 due to the datetime module
-        # or if fax was diabled during the build
+        # or if fax was disabled during the build
         fax_enabled = False
 
 if not fax_enabled:
