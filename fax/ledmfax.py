@@ -690,11 +690,11 @@ class LEDMFaxSendThread(FaxSendThread):
             Fax_send_state = FAX_SEND_STATE_SUCCESS
         return state,Fax_send_state   
 
-    def format_http_post(self, requst, ledmlen, xmldata, content_type="text/xml; charset=utf-8"):
+    def format_http_post(self, request, ledmlen, xmldata, content_type="text/xml; charset=utf-8"):
         host = self.http_host      
         
         return utils.cat(
-"""POST $requst HTTP/1.1\r
+"""POST $request HTTP/1.1\r
 Host: $host\r
 User-Agent: hplip/2.0\r
 Content-Type: $content_type\r
@@ -704,10 +704,10 @@ SOAPAction: ""\r
 \r
 $xmldata""")
     
-    def format_http_put(self, requst, ledmlen, xmldata, content_type="text/xml; charset=utf-8"):
+    def format_http_put(self, request, ledmlen, xmldata, content_type="text/xml; charset=utf-8"):
         host = self.http_host
         return  utils.cat(
-"""PUT $requst HTTP/1.1\r
+"""PUT $request HTTP/1.1\r
 Host: $host\r
 User-Agent: hplip/2.0\r
 Content-Type: $content_type\r
