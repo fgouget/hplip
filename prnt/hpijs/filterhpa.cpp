@@ -214,7 +214,7 @@ void TErnieFilter::Filter1RawRow(unsigned char *currPtr, int rowWidthInPixels, u
 // Filter2RawRows:  Looks filter two raw rows together to form blocks.  Vertical
 // blocks are prefered over horizontal ones.  The routine will create 1x2 blocks
 // before it will create 4x1's.  In total this routine will create 1x2, 2x2, 4x2,
-// 4x1, and 2x1 blocks sizes, with the potential for two seperate 4x1's or 2x1's
+// 4x1, and 2x1 blocks sizes, with the potential for two separate 4x1's or 2x1's
 // in the upper and lower rasters.
 void TErnieFilter::Filter2RawRows(unsigned char *currPtr, unsigned char *upPtr, int rowWidthInPixels, unsigned int *flagsPtr)
 {

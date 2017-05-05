@@ -157,7 +157,7 @@ def nameparser_getfullname(name):
 #
 # How we do it
 #
-#  [1] The name is split into white-space seperated parts
+#  [1] The name is split into white-space separated parts
 #  [2] If there is only one part, it becomes the firstname
 #  [3] If there are only two parts, they become first name and surname
 #  [4] For three or more parts, the first part is the first name and the last
@@ -579,7 +579,7 @@ class VCard:
 
         
     def _field_NICKNAME(self, field, value, result):
-        # ::TODO:: technically this is a comma seperated list ..
+        # ::TODO:: technically this is a comma separated list ..
         result[self._getfieldname("nickname", result)] = self.unquote(value)
 
         
