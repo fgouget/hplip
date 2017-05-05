@@ -138,7 +138,7 @@ bugout:
    return stat;
 }
 
-/* Find last occurance of y in x. */
+/* Find last occurrence of y in x. */
 static char *strrstr(const char *x, const char *y) 
 {
    char *prev=NULL, *next;

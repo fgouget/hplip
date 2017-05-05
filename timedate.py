@@ -97,7 +97,7 @@ try:
             log.info("Setting time and date on %s" % device_uri)
             d.setDateAndTime()
         except Error:
-            log.error("An error occured!")
+            log.error("An error occurred!")
     finally:
         d.close()
 

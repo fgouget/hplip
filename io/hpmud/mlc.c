@@ -502,7 +502,7 @@ int __attribute__ ((visibility ("hidden"))) MlcReverseData(mud_channel *pc, int 
 
          if (len < 0)
          {
-            /* Got a timeout, if exception timeout or timeout occured after read started thats an error. */
+            /* Got a timeout, if exception timeout or timeout occurred after read started thats an error. */
             if (usec_timeout >= HPMUD_EXCEPTION_TIMEOUT || total > 0)
                BUG("unable to read MlcReverseData header: %m %s\n", pd->uri);
             goto bugout;

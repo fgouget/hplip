@@ -148,7 +148,7 @@ class PrintTestPageDialog(QDialog, Ui_Dialog):
             self.close()
 
         else:
-            FailureUI(self, self.__tr("<b>A error occured sending the test page to printer %s.</b><p>Please check the printer and try again."% self.printer_name))
+            FailureUI(self, self.__tr("<b>A error occurred sending the test page to printer %s.</b><p>Please check the printer and try again."% self.printer_name))
 
         d.close()
 

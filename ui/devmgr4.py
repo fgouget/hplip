@@ -1609,7 +1609,7 @@ class DevMgr4(DevMgr4_base):
             QApplication.restoreOverrideCursor()
 
             if not ok:
-                self.FailureUI(self.__tr("<b>An error occured downloading firmware file.</b><p>Please check your printer and ensure that the HPLIP plugin has been installed."))
+                self.FailureUI(self.__tr("<b>An error occurred downloading firmware file.</b><p>Please check your printer and ensure that the HPLIP plugin has been installed."))
 
 
     def CheckDeviceUI(self):

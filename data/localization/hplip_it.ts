@@ -3316,7 +3316,7 @@ Per ripristinare i valori predefiniti noti della stampante, fare clic su &lt;i&g
         <translation>Visualizza documentazione...</translation>
     </message>
     <message>
-        <source>&lt;b&gt;An error occured downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
+        <source>&lt;b&gt;An error occurred downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
         <translation>&lt;b&gt;Si è verificato un errore durante lo scaricamento del file del firmware.&lt;/b&gt;&lt;p&gt;Verificare la stampante e riprovare.</translation>
     </message>
     <message>

@@ -3316,7 +3316,7 @@ For each row, select the label representing the box in which the shorter inner l
         <translation>Просмотр документации...</translation>
     </message>
     <message>
-        <source>&lt;b&gt;An error occured downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
+        <source>&lt;b&gt;An error occurred downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
         <translation>&lt;b&gt;При загрузке файла микропрограммного обеспечения возникла ошибка.&lt;/b&gt;&lt;p&gt;Проверьте принтер и повторите попытку.</translation>
     </message>
     <message>

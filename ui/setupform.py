@@ -986,7 +986,7 @@ class SetupForm(SetupForm_base):
                             if e.opt == ERROR_NO_CUPS_QUEUE_FOUND_FOR_DEVICE:
                                 self.FailureUI(self.__tr("<b>No CUPS queue found for device.</b><p>Please install the printer in CUPS and try again."))
                             else:
-                                self.FailureUI(self.__tr("<b>Printer Error</b><p>An error occured: %s (code=%d)." % (e.msg, e.opt)))
+                                self.FailureUI(self.__tr("<b>Printer Error</b><p>An error occurred: %s (code=%d)." % (e.msg, e.opt)))
                     else:
                         self.FailureUI(self.__tr("<b>Printer Error.</b><p>Printer is busy, offline, or in an error state. Please check the device and try again."))
                         d.close()

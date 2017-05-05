@@ -649,7 +649,7 @@ if mode in (INTERACTIVE_MODE, NON_INTERACTIVE_MODE):
                 except KeyboardInterrupt:
                     log.error("Aborted.")
                 except Exception as e:
-                    log.error("An error occured: %s" % e)
+                    log.error("An error occurred: %s" % e)
             finally:
                 pc.umount()
 

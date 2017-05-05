@@ -487,21 +487,21 @@ def probeDevices(bus=DEFAULT_PROBE_BUS, timeout=10,
                     detected_devices = slp.detectNetworkDevices(ttl, timeout)
                 except Error as socket_error:
                     socket.error = socket_error
-                    log.error("An error occured during network probe.[%s]"%socket_error)
+                    log.error("An error occurred during network probe.[%s]"%socket_error)
                     raise ERROR_INTERNAL
             elif net_search == 'avahi':
                 try:
                     detected_devices = avahi.detectNetworkDevices(ttl, timeout)
                 except Error as socket_error:
                     socket.error = socket_error
-                    log.error("An error occured during network probe.[%s]"%socket_error)
+                    log.error("An error occurred during network probe.[%s]"%socket_error)
                     raise ERROR_INTERNAL
             else :#if net_search = 'mdns'
                 try:
                     detected_devices = mdns.detectNetworkDevices(ttl, timeout)
                 except Error as socket_error:
                     socket.error = socket_error
-                    log.error("An error occured during network probe.[%s]"%socket_error)
+                    log.error("An error occurred during network probe.[%s]"%socket_error)
                     raise ERROR_INTERNAL
 
             for ip in detected_devices:
@@ -2627,7 +2627,7 @@ Content-length: %d\r
                     ok = True
                     log.debug("OK")
                 except (OSError, IOError) as e:
-                    log.error("An error occured: %s" % e)
+                    log.error("An error occurred: %s" % e)
             else:
                 try:
                     self.openPrint()
@@ -2637,7 +2637,7 @@ Content-length: %d\r
                     ok = True
                     log.debug("OK")
                 except Error as e:
-                    log.error("An error occured: %s" % e.msg)
+                    log.error("An error occurred: %s" % e.msg)
         else:
             log.error("Firmware file '%s' not found." % filename)
 

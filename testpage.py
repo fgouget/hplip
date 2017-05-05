@@ -121,7 +121,7 @@ try:
                     if e.opt == ERROR_NO_CUPS_QUEUE_FOUND_FOR_DEVICE:
                         log.error("No CUPS queue found for device. Please install the printer in CUPS and try again.")
                     else:
-                        log.error("An error occured (code=%d)." % e.opt)
+                        log.error("An error occurred (code=%d)." % e.opt)
                 else:
                     if wait_for_printout:
                         log.info("Test page has been sent to printer. Waiting for printout to complete...")
@@ -135,14 +135,14 @@ try:
                             try:
                                 d.queryDevice(quick=True)
                             except Error as e:
-                                log.error("An error has occured.")
+                                log.error("An error has occurred.")
 
                             if d.error_state == ERROR_STATE_CLEAR:
                                 break
 
                             elif d.error_state == ERROR_STATE_ERROR:
                                 cleanup_spinner()
-                                log.error("An error has occured (code=%d). Please check the printer and try again." % d.status_code)
+                                log.error("An error has occurred (code=%d). Please check the printer and try again." % d.status_code)
                                 break
 
                             elif d.error_state == ERROR_STATE_WARNING:
@@ -171,7 +171,7 @@ try:
             d.close()
 
             log.info("")
-            log.notice("If an error occured, or the test page failed to print, refer to the HPLIP website")
+            log.notice("If an error occurred, or the test page failed to print, refer to the HPLIP website")
             log.notice("at: http://hplip.sourceforge.net for troubleshooting and support.")
             log.info("")
 

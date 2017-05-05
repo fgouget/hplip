@@ -1890,7 +1890,7 @@ def StatusTypeIPPStatus(attrs):
             status_block['status-code'] = printer_state_reasons_xlate.get(printer_state_reasons, STATUS_PRINTER_IDLE)
 
     except Exception as e:
-        log.debug("Exception occured while updating printer-state [%s]" %e.args[0])
+        log.debug("Exception occurred while updating printer-state [%s]" %e.args[0])
         status_block = {}
 
     return status_block

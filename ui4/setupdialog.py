@@ -1190,7 +1190,7 @@ class SetupDialog(QDialog, Ui_Dialog):
                         if e.opt == ERROR_NO_CUPS_QUEUE_FOUND_FOR_DEVICE:
                             FailureUI(self, self.__tr("<b>No CUPS queue found for device.</b><p>Please install the printer in CUPS and try again."))
                         else:
-                            FailureUI(self, self.__tr("<b>Printer Error</b><p>An error occured: %s (code=%d)." % (e.msg, e.opt)))
+                            FailureUI(self, self.__tr("<b>Printer Error</b><p>An error occurred: %s (code=%d)." % (e.msg, e.opt)))
                 else:
                     FailureUI(self, self.__tr("<b>Printer Error.</b><p>Printer is busy, offline, or in an error state. Please check the device and try again."))
                     d.close()

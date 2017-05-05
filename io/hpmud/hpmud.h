@@ -309,7 +309,7 @@ enum HPMUD_RESULT hpmud_write_channel(HPMUD_DEVICE dd, HPMUD_CHANNEL cd, const v
 /*
  * hpmud_channel_read - read data from specified channel, call will block
  *
- * May return with partial bytes read (ie: bytes_read < size) or zero if timeout occured.
+ * May return with partial bytes read (ie: bytes_read < size) or zero if timeout occurred.
  *
  * inputs:
  *  dd - device descriptor

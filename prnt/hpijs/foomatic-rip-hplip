@@ -150,7 +150,7 @@ $|=1;
 # use.
 
 my $EXIT_PRINTED = 0;         # file was printed normally
-my $EXIT_PRNERR = 1;          # printer error occured
+my $EXIT_PRNERR = 1;          # printer error occurred
 my $EXIT_PRNERR_NORETRY = 2;  # printer error with no hope of retry
 my $EXIT_JOBERR = 3;          # job is defective
 my $EXIT_SIGNAL = 4;          # terminated after catching signal
@@ -6155,7 +6155,7 @@ sub buildcommandline {
 	    # command-line argument
 
 	    # Insert the processed argument in the commandline
-	    # just before every occurance of the spot marker.
+	    # just before every occurrence of the spot marker.
 	    $dat->{'currentcmd'} =~ s!\%$spot!$cmdvar\%$spot!g;
 	}
 	# Insert option into command line of CUPS raster driver

@@ -3316,7 +3316,7 @@ Wählen Sie für jede Reihe die Beschriftung des Kästchens aus, in dem die kür
         <translation>Dokumentation anzeigen...</translation>
     </message>
     <message>
-        <source>&lt;b&gt;An error occured downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
+        <source>&lt;b&gt;An error occurred downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
         <translation>&lt;b&gt;Beim Herunterladen der Firmwaredatei ist ein Fehler aufgetreten.&lt;/b&gt;&lt;p&gt;Überprüfen Sie den Drucker, und wiederholen Sie den Vorgang.</translation>
     </message>
     <message>

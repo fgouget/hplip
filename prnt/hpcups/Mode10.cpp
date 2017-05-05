@@ -220,7 +220,7 @@ This function compresses a single row per call.
             replacementCount = curPixel - replacementCount;
             ASSERT(replacementCount >= 0);
 
-            if (replacementCount > 0) // Adjust for total occurance and move to next pixel to do.
+            if (replacementCount > 0) // Adjust for total occurrence and move to next pixel to do.
             {
                 curPixel++;
                 replacementCount++;

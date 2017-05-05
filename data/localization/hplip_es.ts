@@ -3316,7 +3316,7 @@ En cada fila, seleccione la etiqueta que representa el cuadro en el que las lín
         <translation>Ver documentación...</translation>
     </message>
     <message>
-        <source>&lt;b&gt;An error occured downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
+        <source>&lt;b&gt;An error occurred downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
         <translation>&lt;b&gt;Se produjo un error al descargar archivo de firmware.&lt;/b&gt;&lt;p&gt;Compruebe la impresora e inténtelo de nuevo.</translation>
     </message>
     <message>

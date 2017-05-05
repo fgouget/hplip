@@ -3316,7 +3316,7 @@ Para cada fileira, selecione a legenda que representa a caixa na qual as linhas 
         <translation>Exibir documentação...</translation>
     </message>
     <message>
-        <source>&lt;b&gt;An error occured downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
+        <source>&lt;b&gt;An error occurred downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
         <translation>&lt;b&gt;Ocorreu um erro durante o download do arquivo de firmware.&lt;/b&gt;&lt;p&gt;Verifique a impressora e tente novamente.</translation>
     </message>
     <message>

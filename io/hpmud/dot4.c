@@ -475,7 +475,7 @@ int __attribute__ ((visibility ("hidden"))) Dot4ReverseData(mud_channel *pc, int
 
          if (len < 0)
          {
-            /* Got a timeout, if exception timeout or timeout occured after read started thats an error. */
+            /* Got a timeout, if exception timeout or timeout occurred after read started thats an error. */
             if (usec_timeout >= HPMUD_EXCEPTION_TIMEOUT || total > 0)
                BUG("unable to read Dot4ReverseData header: %m %s\n", pd->uri);
             goto bugout;

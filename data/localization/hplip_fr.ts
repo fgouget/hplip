@@ -3316,7 +3316,7 @@ Pour chaque rangée, sélectionnez l&apos;étiquette qui représente le cadre da
         <translation>Afficher la documentation …</translation>
     </message>
     <message>
-        <source>&lt;b&gt;An error occured downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
+        <source>&lt;b&gt;An error occurred downloading firmware file.&lt;/b&gt;&lt;p&gt;Please check your printer and try again.</source>
         <translation>&lt;b&gt;Une erreur s&apos;est produite pendant le téléchargement du fichier du micrologiciel.&lt;/b&gt;&lt;p&gt;Veuillez vérifier votre imprimante et recommencer.</translation>
     </message>
     <message>
