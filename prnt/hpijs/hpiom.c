@@ -308,7 +308,7 @@ int RetrieveAlignmentValues038(int hd, int chan, LDLGenAlign *pG)
    /* Disable responses. */
    EncodeCommand(buf, sizeof(buf)
                      , 0
-                     , eDiableResponses
+                     , eDisableResponses
                      , eCommandUnknown
                      , NULL
                      , 0
@@ -378,7 +378,7 @@ int RetrieveAlignmentValues043(int hd, int chan, LDLGenAlign *pG)
    /* Disable responses. */
    EncodeCommand(buf, sizeof(buf)
                      , 0
-                     , eDiableResponses
+                     , eDisableResponses
                      , eCommandUnknown
                      , NULL
                      , 0
@@ -438,7 +438,7 @@ uint32_t RetrieveVersion(int hd, int chan)
    /* Disable responses. */
    EncodeCommand(buf, sizeof(buf)
                      , 0
-                     , eDiableResponses
+                     , eDisableResponses
                      , eCommandUnknown
                      , NULL
                      , 0

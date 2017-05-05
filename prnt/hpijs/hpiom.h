@@ -40,7 +40,7 @@ enum ePACKETTYPE{ eCommand
                 , eDisablePacing
                 , eEnablePacing
                 , eResumeNormalOperation
-                , eDiableResponses
+                , eDisableResponses
                 , eEnableResponses
                 , eResetLidil
                 , eSynch
