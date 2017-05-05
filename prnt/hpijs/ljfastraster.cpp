@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  ljfastraster.cpp : Implimentation for the LJFastRaster class
+  ljfastraster.cpp : Implementation for the LJFastRaster class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

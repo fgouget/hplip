@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  systemservice.cpp : Implimentation for the SystemServices class
+  systemservice.cpp : Implementation for the SystemServices class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

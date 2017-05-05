@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj690.cpp : Implimentation for the DJ6xxPhoto class
+  dj690.cpp : Implementation for the DJ6xxPhoto class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

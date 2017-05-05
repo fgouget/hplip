@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj3320.cpp : Implimentation for the DJ3320 class
+  dj3320.cpp : Implementation for the DJ3320 class
 
   Copyright (c) 2001 - 2015, HP Co.
   All rights reserved.

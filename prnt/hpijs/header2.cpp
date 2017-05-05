@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  header.cpp : Implimentation for the Header class
+  header.cpp : Implementation for the Header class
 
   Copyright (c) 1996 - 2008, HP Co.
   All rights reserved.

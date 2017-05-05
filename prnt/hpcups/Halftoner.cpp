@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  Halftoner.cpp : Implimentation for the Halftoner class
+  Halftoner.cpp : Implementation for the Halftoner class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj3320ColorMaps.cpp : Implimentation for the DJ3320 color maps
+  dj3320ColorMaps.cpp : Implementation for the DJ3320 color maps
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

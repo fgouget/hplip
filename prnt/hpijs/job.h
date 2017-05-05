@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  job.h : Interface/Implimentation for the Job class
+  job.h : Interface/Implementation for the Job class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj8x5.cpp : Implimentation for the DJ8x5 class
+  dj8x5.cpp : Implementation for the DJ8x5 class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

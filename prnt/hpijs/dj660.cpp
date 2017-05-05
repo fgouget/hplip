@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj660.cpp : Implimentation for the DJ660 class
+  dj660.cpp : Implementation for the DJ660 class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

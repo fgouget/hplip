@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  colormatcher_open.cpp : Implimentation for the ColorMatcher_Open class
+  colormatcher_open.cpp : Implementation for the ColorMatcher_Open class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  registry.cpp : Implimentation for the DeviceRegistry class
+  registry.cpp : Implementation for the DeviceRegistry class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

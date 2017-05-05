@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  ljcolor.cpp : Implimentation for the LJColor class
+  ljcolor.cpp : Implementation for the LJColor class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

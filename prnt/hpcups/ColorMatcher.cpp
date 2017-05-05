@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  colormatch.cpp : Implimentation for the ColorMatcher class
+  colormatch.cpp : Implementation for the ColorMatcher class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

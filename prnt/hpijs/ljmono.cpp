@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  ljmono.cpp : Implimentation for the LJMono class
+  ljmono.cpp : Implementation for the LJMono class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

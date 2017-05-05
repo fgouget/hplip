@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj9xx.cpp : Implimentation for the DJ9xx class
+  dj9xx.cpp : Implementation for the DJ9xx class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

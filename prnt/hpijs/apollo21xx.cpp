@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  apollo21xx.cpp : Implimentation for the Apollo21xx class
+  apollo21xx.cpp : Implementation for the Apollo21xx class
 
   Copyright (c) 2000, 2015, HP Co.
   All rights reserved.

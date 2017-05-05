@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  context.h : Interface/Implimentation for the PrintContext class
+  context.h : Interface/Implementation for the PrintContext class
 
   Copyright (c) 1996 - 2008, HP Co.
   All rights reserved.

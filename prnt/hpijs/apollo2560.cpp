@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  apollo2560.cpp : Implimentation for the Apollo2560 class
+  apollo2560.cpp : Implementation for the Apollo2560 class
 
   Copyright (c) 2000, 2015, HP Co.
   All rights reserved.

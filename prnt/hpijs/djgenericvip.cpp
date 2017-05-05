@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  djgenericvip.cpp : Implimentation for the generic VIP class
+  djgenericvip.cpp : Implementation for the generic VIP class
 
   Copyright (c) 2001-2015, HP Co.
   All rights reserved.

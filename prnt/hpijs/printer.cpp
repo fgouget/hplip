@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  printer.cpp : Implimentation for the Printer class
+  printer.cpp : Implementation for the Printer class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

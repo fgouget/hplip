@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  ljjetready.cpp : Implimentation for the LJJetReady class
+  ljjetready.cpp : Implementation for the LJJetReady class
 
   Copyright (c) 1996 - 2008, HP Co.
   All rights reserved.

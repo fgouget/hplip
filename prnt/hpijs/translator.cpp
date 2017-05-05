@@ -1,5 +1,5 @@
 /*****************************************************************************\
-   translator.h : Implimentation for the RasterSender class
+   translator.h : Implementation for the RasterSender class
 
    Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

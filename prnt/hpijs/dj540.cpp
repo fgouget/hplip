@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj540.cpp : Implimentation for the DJ540 class
+  dj540.cpp : Implementation for the DJ540 class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

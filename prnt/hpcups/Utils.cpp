@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  Utils.cpp : implementaiton of utility functions
+  Utils.cpp : Implementation of utility functions
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

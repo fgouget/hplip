@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  script.cpp : Implimentation for scripting
+  script.cpp : Implementation for scripting
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

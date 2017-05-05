@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  Mode2.cpp : implementaiton of Mode2 class
+  Mode2.cpp : Implementation of Mode2 class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

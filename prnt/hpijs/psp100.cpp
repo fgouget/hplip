@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  psp100.cpp : Implimentation for the PSP100 class
+  psp100.cpp : Implementation for the PSP100 class
 
   Copyright (c) 2015, HP Co.
   All rights reserved.

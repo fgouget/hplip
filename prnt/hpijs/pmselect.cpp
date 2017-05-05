@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  pmselect.cpp : Implimentation for the ModeSet class
+  pmselect.cpp : Implementation for the ModeSet class
 
   Copyright (c) 2001 - 2015, HP Co.
   All rights reserved.

@@ -292,7 +292,7 @@ enum
 
 /*
 We don't actually support 4-byte RGB for anything excpet VIP printers.
-So implimenting this and documenting it as a build option is misleading.
+So implementing this and documenting it as a build option is misleading.
 We must make halftoning support 4-byte RGB before we can publish this.
 If we hear from someone that they need support for 4-byte RGB (and it's
 worth it) then we will add it to halftoning, put the define in config.h,

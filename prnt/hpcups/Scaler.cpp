@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  Scaler.cpp : Implimentation for the Scaler class
+  Scaler.cpp : Implementation for the Scaler class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

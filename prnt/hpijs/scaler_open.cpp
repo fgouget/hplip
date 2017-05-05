@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  scaler_open.cpp : Implimentation for the Scaler_Open class
+  scaler_open.cpp : Implementation for the Scaler_Open class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

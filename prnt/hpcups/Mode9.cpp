@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  Mode9.cpp : implementaiton of Mode9 class
+  Mode9.cpp : Implementation of Mode9 class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  filterhpa.cpp : Implimentation for the TErnieFilter class
+  filterhpa.cpp : Implementation for the TErnieFilter class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

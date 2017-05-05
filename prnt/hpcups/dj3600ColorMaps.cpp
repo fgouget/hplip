@@ -1,5 +1,5 @@
 /*****************************************************************************\
- dj3600ColorMaps.cpp : Implimentation for the DJ3600 color maps
+ dj3600ColorMaps.cpp : Implementation for the DJ3600 color maps
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  capture.cpp : Implimentation for capturing functions
+  capture.cpp : Implementation for capturing functions
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

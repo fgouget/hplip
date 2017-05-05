@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj850.cpp : Implimentation for the DJ850 class
+  dj850.cpp : Implementation for the DJ850 class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

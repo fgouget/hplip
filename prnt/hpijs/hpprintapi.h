@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  hpprintapi.h : Interface/Implimentation for the APDK API
+  hpprintapi.h : Interface/Implementation for the APDK API
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

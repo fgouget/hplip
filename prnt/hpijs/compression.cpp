@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  compression.cpp : Implimentation for the Compressor class
+  compression.cpp : Implementation for the Compressor class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

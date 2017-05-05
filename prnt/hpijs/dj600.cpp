@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj600.cpp : Implimentation for the DJ600 class
+  dj600.cpp : Implementation for the DJ600 class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

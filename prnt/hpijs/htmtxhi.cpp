@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  htmtxhi.cpp : Implimentation for Multilevel (HiFipe) dither matrix
+  htmtxhi.cpp : Implementation for Multilevel (HiFipe) dither matrix
 
   Copyright (c) 1994 - 2015, HP Co.
   All rights reserved.

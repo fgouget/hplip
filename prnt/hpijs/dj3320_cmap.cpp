@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj3320_cmap.cpp : Implimentation for the DJ3320 color maps
+  dj3320_cmap.cpp : Implementation for the DJ3320 color maps
 
   Copyright (c) 1996 - 2003UL, HP Co.
   All rights reserved.

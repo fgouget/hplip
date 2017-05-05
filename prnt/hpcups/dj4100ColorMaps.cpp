@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj4100_cmap.cpp : Implimentation for the DJ4100 color maps
+  dj4100_cmap.cpp : Implementation for the DJ4100 color maps
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

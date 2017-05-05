@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  Mode3.cpp : Implimentation for the Mode3 class
+  Mode3.cpp : Implementation for the Mode3 class
 
   Copyright (c) 1996 - 2015, HP Co.
   All rights reserved.

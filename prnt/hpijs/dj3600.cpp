@@ -1,5 +1,5 @@
 /*****************************************************************************\
-  dj3600.cpp : Implimentation for the DJ3600 class
+  dj3600.cpp : Implementation for the DJ3600 class
 
   Copyright (c) 2003-2003, HP Co.
   All rights reserved.
