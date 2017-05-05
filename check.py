@@ -167,6 +167,12 @@ def get_comment(package, Inst_status, installed_ver):
 
 ########## Classes ###########
 #DependenciesCheck class derived from CoreInstall
+DEPENDENCY_REQUIRED_INDEX = 0
+DEPENDENCY_OPTIONS_INDEX = 1
+DEPENDENCY_CHECK_FUNC_INDEX = 3
+DEPENDENCY_VER_MIN_INDEX = 5
+DEPENDENCY_VER_FUNC_INDEX = 6
+DEPENDENCY_CATEGORY_INDEX = 7
 class DependenciesCheck(object):
     def __init__(self, mode=MODE_CHECK, ui_mode=INTERACTIVE_MODE, ui_toolkit='qt4'):
         # CoreInstall.__init__(self,mode,ui_mode,ui_toolkit)
@@ -203,16 +209,18 @@ class DependenciesCheck(object):
             if d in ['dbus','python-devel','python-dbus','pyqt4-dbus','libnetsnmp-devel','gcc','make','reportlab','policykit','sane-devel','cups-ddk']:
                 return
 
-        if deps_info[6] is None:
+        if deps_info[DEPENDENCY_VER_FUNC_INDEX] is None:
             installed_ver = '-'
-        elif Ver_Func_Pat.search(deps_info[6]):
-            if deps_info[6] in self.core.version_func:
-                installed_ver = self.core.version_func[deps_info[6]]()
+        elif Ver_Func_Pat.search(deps_info[DEPENDENCY_VER_FUNC_INDEX]):
+            if deps_info[DEPENDENCY_VER_FUNC_INDEX] in self.core.version_func:
+                installed_ver = self.core.version_func[deps_info[DEPENDENCY_VER_FUNC_INDEX]]()
             else:
                 installed_ver = '-'
         else:
-            installed_ver = get_version(deps_info[6])
-        Status = Status_Type(deps_info[3](),deps_info[5],installed_ver) 
+            installed_ver = get_version(deps_info[DEPENDENCY_VER_FUNC_INDEX])
+        Status = Status_Type(deps_info[DEPENDENCY_CHECK_FUNC_INDEX](),
+                             deps_info[DEPENDENCY_VER_MIN_INDEX],
+                             installed_ver)
         comment = get_comment(d, Status, installed_ver)
         packages_to_install, commands=[],[]
         if self.core.is_auto_installer_support():
@@ -224,7 +232,7 @@ class DependenciesCheck(object):
             if not packages_to_install and d == 'hpaio':
                 packages_to_install.append(d)
 
-        if deps_info[0]:
+        if deps_info[DEPENDENCY_REQUIRED_INDEX]:
             package_type = "REQUIRED"
         else:
             package_type = "OPTIONAL"
@@ -236,9 +244,9 @@ class DependenciesCheck(object):
             self.hpmudext_avail = True
 
         if Status == 'OK':
-            log.info(" %-20s %-60s %-15s %-15s %-15s %-10s %s" %(d,deps_info[2], package_type,deps_info[5],installed_ver,Status,comment))
+            log.info(" %-20s %-60s %-15s %-15s %-15s %-10s %s" %(d,deps_info[DEPENDENCY_DISPLAY_INDEX], package_type,deps_info[DEPENDENCY_VER_MIN_INDEX],installed_ver,Status,comment))
         else:
-            log.info(log.red(" error: %-13s %-60s %-15s %-15s %-15s %-10s %s" %(d,deps_info[2], package_type,deps_info[5],installed_ver,Status,comment)))
+            log.info(log.red(" error: %-13s %-60s %-15s %-15s %-15s %-10s %s" %(d,deps_info[DEPENDENCY_DISPLAY_INDEX], package_type,deps_info[DEPENDENCY_VER_MIN_INDEX],installed_ver,Status,comment)))
             self.num_errors += 1
             for cmd in commands:
                 if cmd:
@@ -363,43 +371,43 @@ class DependenciesCheck(object):
                 for dep_check in dep_dict:
                     tui.header(dep_check)
                     for dep in self.core.dependencies:
-                        if self.core.dependencies[dep][7] == dep_dict[dep_check] and any([self.core.selected_options[x] for x in self.core.dependencies[dep][1]]):
+                        if self.core.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] == dep_dict[dep_check] and any([self.core.selected_options[x] for x in self.core.dependencies[dep][DEPENDENCY_OPTIONS_INDEX]]):
                             self.__update_deps_info(supported_distro_vrs, dep,
                             self.core.dependencies[dep])
 
                 # tui.header(" External Dependencies")
                 # for dep in self.dependencies:
-                #     if self.dependencies[dep][7] == EXTERNALDEP:
+                #     if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] == EXTERNALDEP:
                 #         self.__update_deps_info(supported_distro_vrs, dep, self.dependencies[dep])
 
                 # tui.header(" General Dependencies")
                 # for dep in self.dependencies:
-                #     if self.dependencies[dep][7] == GENERALDEP:
+                #     if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] == GENERALDEP:
                 #         self.__update_deps_info(supported_distro_vrs, dep, self.dependencies[dep])
 
                 # tui.header(" COMPILEDEP")
                 # for dep in self.dependencies:
-                #     if self.dependencies[dep][7] == COMPILEDEP:
+                #     if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] == COMPILEDEP:
                 #         self.__update_deps_info(supported_distro_vrs, dep, self.dependencies[dep])
 
                 # tui.header(" Python Extentions")
                 # for dep in self.dependencies:
-                #     if self.dependencies[dep][7] == PYEXT:
+                #     if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] == PYEXT:
                 #         self.__update_deps_info(supported_distro_vrs, dep, self.dependencies[dep])
 
                 # tui.header(" Scan Configuration")
                 # for dep in self.dependencies:
-                #     if self.dependencies[dep][7] == SCANCONF:
+                #     if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] == SCANCONF:
                 #         self.__update_deps_info(supported_distro_vrs, dep, self.dependencies[dep])
 
                 # tui.header(" Other Dependencies")
                 # for dep in self.dependencies:
-                #     if self.dependencies[dep][7] in dep_dict:
-                #     # if self.dependencies[dep][7] != SCANCONF and    \
-                #     #     self.dependencies[dep][7] != PYEXT and  \
-                #     #     self.dependencies[dep][7] != COMPILEDEP and     \
-                #     #     self.dependencies[dep][7] != GENERALDEP and     \
-                #     #     self.dependencies[dep][7] != EXTERNALDEP:
+                #     if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] in dep_dict:
+                #     # if self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] != SCANCONF and    \
+                #     #     self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] != PYEXT and  \
+                #     #     self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] != COMPILEDEP and     \
+                #     #     self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] != GENERALDEP and     \
+                #     #     self.dependencies[dep][DEPENDENCY_CATEGORY_INDEX] != EXTERNALDEP:
                 #         self.__update_deps_info(supported_distro_vrs, dep, self.dependencies[dep])
 
             if self.scanning_enabled:

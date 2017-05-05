@@ -69,7 +69,9 @@ DEPENDENCY_COMPILE_TIME = 2
 DEPENDENCY_RUN_AND_COMPILE_TIME = 3
 
 DEPENDENCY_REQUIRED_INDEX = 0
+DEPENDENCY_OPTIONS_INDEX = 1
 DEPENDENCY_DISPLAY_INDEX = 2
+DEPENDENCY_CHECK_FUNC_INDEX = 3
 
 # Mapping from patterns to probability contribution of pattern
 # Example code from David Mertz' Text Processing in Python.
@@ -455,7 +457,7 @@ class CoreInstall(object):
         for opt in self.options:
             update_spinner()
             for d in self.dependencies:
-                if opt in self.dependencies[d][1]:
+                if opt in self.dependencies[d][DEPENDENCY_OPTIONS_INDEX]:
                     self.options[opt][2].append(d)
 
         self.load_distros()
@@ -590,7 +592,7 @@ class CoreInstall(object):
             if callback is not None:
                 callback("Checking: %s\n" % d)
 
-            self.have_dependencies[d] = self.dependencies[d][3]()
+            self.have_dependencies[d] = self.dependencies[d][DEPENDENCY_CHECK_FUNC_INDEX]()
             log.debug("have %s = %s" % (d, self.have_dependencies[d]))
 
         cleanup_spinner()
@@ -1635,7 +1637,7 @@ class CoreInstall(object):
         overall_commands_to_run = []
         for d in dd:
             include = False
-            for opt in self.dependencies[d][1]:
+            for opt in self.dependencies[d][DEPENDENCY_OPTIONS_INDEX]:
                 if self.selected_options[opt]:
                     include = True
             if include:
