@@ -352,6 +352,8 @@ class CoreInstall(object):
             'libjpeg':          (True,  ['base', 'prnt'], JPEG_STR, self.check_libjpeg, DEPENDENCY_RUN_AND_COMPILE_TIME, '-', None, GENERALDEP),
             'libtool':          (True,  ['base', 'prnt'], LIBTOOL_STR, self.check_libtool, DEPENDENCY_COMPILE_TIME, '-', 'libtool --version', COMPILEDEP),
             'cups':            (True,  ['base', 'prnt'], CUPS_STR, self.check_cups, DEPENDENCY_RUN_TIME, '1.1', 'cups-config --version', EXTERNALDEP),
+            # cups-devel provides cups-config which we need to verify that
+            # cups meets the minimum version requirement :-(
             'cups-devel':       (True,  ['base', 'prnt'], CUPS_DEV_STR, self.check_cups_devel, DEPENDENCY_COMPILE_TIME, '-', 'cups-config --version', GENERALDEP),
             'cups-image':       (True,  ['base', 'prnt'], CUPS_IMG_STR, self.check_cups_image, DEPENDENCY_COMPILE_TIME, '-', 'cups-config --version', GENERALDEP),
             'gcc':             (True,  ['base', 'prnt'], GCC_STR, self.check_gcc, DEPENDENCY_COMPILE_TIME, '-', 'gcc --version', COMPILEDEP),
