@@ -405,7 +405,7 @@ class CoreInstall(object):
             'pyqt5':            (True,  ['gui_qt5'], QT5_STR, self.check_pyqt5, DEPENDENCY_RUN_TIME, '5.0', 'FUNC#get_pyQt5_version', GENERALDEP),
             'python-dbus':      (True,  ['fax'], PYDBUS_STR, self.check_python_dbus, DEPENDENCY_RUN_TIME, '0.80.0', 'FUNC#get_python_dbus_ver', GENERALDEP),
             'python-xml':     (True,  ['base'], PYXML_STR, self.check_python_xml, DEPENDENCY_RUN_TIME, '-', 'FUNC#get_python_xml_version', GENERALDEP),
-            'python-devel':    (True,  ['base'], PY_DEV_STR, self.check_python_devel, DEPENDENCY_COMPILE_TIME, '2.2', 'python --version', GENERALDEP),
+            'python-devel':    (True,  ['base'], PY_DEV_STR, self.check_python_devel, DEPENDENCY_COMPILE_TIME, '2.2', 'python --version', COMPILEDEP),
             'pil':              (False, ['scan'], PIL_STR, self.check_pil, DEPENDENCY_RUN_TIME, '-', 'FUNC#get_pil_version', GENERALDEP),
             # Optional fax packages
             'reportlab':        (False, ['fax'], REPORTLAB_STR, self.check_reportlab, DEPENDENCY_RUN_TIME, '2.0', 'FUNC#get_reportlab_version', GENERALDEP),
@@ -424,7 +424,7 @@ class CoreInstall(object):
             'python3-pyqt5':      (True,  ['gui_qt5'], QT5_STR, self.check_pyqt5, DEPENDENCY_RUN_TIME, '5.0', 'FUNC#get_pyQt5_version', GENERALDEP),
             'python3-dbus':       (True,  ['fax'], PYDBUS_STR, self.check_python_dbus, DEPENDENCY_RUN_TIME, '0.80.0', 'FUNC#get_python_dbus_ver', GENERALDEP),
             'python3-xml':      (True,  ['base'], PYXML_STR, self.check_python_xml, DEPENDENCY_RUN_TIME, '-', 'FUNC#get_python_xml_version', GENERALDEP),
-            'python3-devel':     (True,  ['base'], PY_DEV_STR, self.check_python_devel, DEPENDENCY_COMPILE_TIME, '2.2', 'python3 --version', GENERALDEP),
+            'python3-devel':     (True,  ['base'], PY_DEV_STR, self.check_python_devel, DEPENDENCY_COMPILE_TIME, '2.2', 'python3 --version', COMPILEDEP),
             'python3-pil':        (False, ['scan'], PIL_STR, self.check_pil, DEPENDENCY_RUN_TIME, '-', 'FUNC#get_pil_version', GENERALDEP),
             # Optional fax packages
             'python3-reportlab':  (False, ['fax'], REPORTLAB_STR, self.check_reportlab, DEPENDENCY_RUN_TIME, '2.0', 'FUNC#get_reportlab_version', GENERALDEP),
