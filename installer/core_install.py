@@ -369,7 +369,10 @@ class CoreInstall(object):
 
             # Required scan packages
             'sane':             (True,  ['scan'], SANE_STR, self.check_sane, DEPENDENCY_RUN_TIME, '-', 'sane-config --version', GENERALDEP),
-            'sane-devel':      (True,  ['scan'], SANE_DEV_STR, self.check_sane_devel, DEPENDENCY_COMPILE_TIME, '-', 'sane-config --version', GENERALDEP),
+            # sane-devel provides sane-config which is used above to show the
+            # sane version. But since there is no minimal version requirement
+            # it is only really needed at build time.
+            'sane-devel':      (True,  ['scan'], SANE_DEV_STR, self.check_sane_devel, DEPENDENCY_COMPILE_TIME, '-', 'sane-config --version', COMPILEDEP),
 
             # Optional scan packages
             'xsane':            (False, ['scan'], XSANE_STR, self.check_xsane, DEPENDENCY_RUN_TIME, '0.9', 'FUNC#get_xsane_version', EXTERNALDEP),
